@@ -13,3 +13,15 @@
     background-image: url('../img/me/Dashboard.png');
     background-repeat: no-repeat
 }
+
+.priority-background {
+    background-image: url('../img/goals/Priorities.png');
+    background-repeat: no-repeat
+}
+
+.savings-background {
+    background-image: url('../img/expense/Savings.png');
+    background-repeat: no-repeat
+
+
+}

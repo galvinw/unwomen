@@ -47,10 +47,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-dash': {
         templateUrl: 'templates/tab-dash.html',
-        //templateUrl: '//www.google.com',
-        
         controller: 'DashCtrl'
-        
       }
     }
   })
@@ -61,6 +58,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         'tab-dash': {
           templateUrl: 'templates/expense-detail.html',
           controller: 'ExpenseDetailCtrl'
+        }
+      }
+    })
+
+    .state('tab.savings', {
+      url: '/dash/2',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/savings.html'
         }
       }
     })
@@ -102,6 +108,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.goals-priority', {
+      url: '/goals/2',
+      views: {
+        'tab-goals': {
+          templateUrl: 'templates/goals-priority.html',
+          controller: 'GoalPriorityCtrl'
+          
+          
+        }
+      }
+    })
+
+
+
   .state('tab.me', {
     url: '/me',
     views: {

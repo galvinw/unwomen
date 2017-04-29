@@ -29,6 +29,15 @@ angular.module('starter.controllers', [])
   // $scope.chat = Chats.get($stateParams.chatId);
 })
 
+.controller('GoalPriorityCtrl', function($scope, $stateParams) {
+   $scope.items = [1, 2, 3, 4];
+   $scope.moveItem = function(item, fromIndex, toIndex) {
+    //Move the item in the array
+    $scope.items.splice(fromIndex, 1);
+    $scope.items.splice(toIndex, 0, item);
+  };
+})
+
 .controller('ExpenseDetailCtrl', function($scope, $stateParams) {
    $scope.expense = { 'amount' : '2000' };
 })

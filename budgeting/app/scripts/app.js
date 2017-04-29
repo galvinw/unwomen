@@ -19,6 +19,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
+      //StatusBar.hide();
     }
   });
 })
@@ -49,9 +50,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         //templateUrl: '//www.google.com',
         
         controller: 'DashCtrl'
+        
       }
     }
   })
+
+    .state('tab.expense-detail', {
+      url: '/dash/1',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/expense-detail.html',
+          controller: 'ExpenseDetailCtrl'
+        }
+      }
+    })
 
   .state('tab.feed', {
       url: '/feed',
@@ -62,6 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
     .state('tab.chat-detail', {
       url: '/feed/:chatId',
       views: {
@@ -80,7 +93,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    .state('tab.goals-detail', {
+      url: '/goals/1',
+      views: {
+        'tab-goals': {
+          templateUrl: 'templates/goals-detail.html',
+          controller: 'GoalDetailCtrl'
+        }
+      }
+    })
   .state('tab.me', {
     url: '/me',
     views: {

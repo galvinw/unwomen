@@ -19,9 +19,19 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats,myChats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
+
+.controller('GoalDetailCtrl', function($scope, $stateParams) {
+   $scope.expense = { 'amount' : '2000' };
+  // $scope.chat = Chats.get($stateParams.chatId);
+})
+
+.controller('ExpenseDetailCtrl', function($scope, $stateParams) {
+   $scope.expense = { 'amount' : '2000' };
+})
+
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {

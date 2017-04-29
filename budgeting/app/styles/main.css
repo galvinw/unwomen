@@ -1,1 +1,5 @@
 /* Your application styles go here */
+.signup-background {
+    background-image: url('../img/expense/Expensesselection.png');
+    background-repeat: no-repeat
+}

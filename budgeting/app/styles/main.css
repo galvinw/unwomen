@@ -3,3 +3,13 @@
     background-image: url('../img/expense/Expensesselection.png');
     background-repeat: no-repeat
 }
+
+.goals-background {
+    background-image: url('../img/goals/GoalDetails.png');
+    background-repeat: no-repeat
+}
+
+.me-background {
+    background-image: url('../img/me/Dashboard.png');
+    background-repeat: no-repeat
+}

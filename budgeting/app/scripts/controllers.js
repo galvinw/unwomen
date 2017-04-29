@@ -25,6 +25,7 @@ angular.module('starter.controllers', [])
 
 .controller('GoalDetailCtrl', function($scope, $stateParams) {
    $scope.expense = { 'amount' : '2000' };
+   $scope.time = { 'time' : '30' };
   // $scope.chat = Chats.get($stateParams.chatId);
 })
 

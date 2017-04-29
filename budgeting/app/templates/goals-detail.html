@@ -1,4 +1,4 @@
-<ion-view view-title="expense" class="signup-background" hide-nav-bar="true">
+<ion-view view-title="expense" class="goals-background" hide-nav-bar="true">
   <ion-content>
     <ion-list>
         <!--<ion-item>
@@ -7,12 +7,25 @@
             <ion-label range-right>50,000</ion-label>
           </ion-range>
         </ion-item>-->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <div class="item range" style="border-radius: 5px;width: 90%;margin: auto;" >
         <i>$</i>
-        <input type="range" name="amount" min="0" max="10000" value="1500" step="500">
+        <input type="range" name="amount" ng-model="expense.amount" min="0" max="10000" value="1500" step="500">
         <i style="font-size: 18pt">$</i>
+        <p style="text-align: center">Amount : {{expense.amount}}</p>
       </div>    
+        <br>
+      <div class="item range" style="border-radius: 5px;width: 90%;margin: auto;" >
+        <i></i>
+        <input type="range" name="amount" ng-model="time.time" min="5" max="100" value="10" step="1">
+        <i style="font-size: 18pt">  </i>
+        <p style="text-align: center">   {{time.time}} Days</p>
+      </div> 
+        <br><br>
+      <div style="">
+      </div>
+
+
     </ion-list >
   </ion-content>
 </ion-view>

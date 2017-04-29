@@ -23,14 +23,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
+  
   $stateProvider
-
+  
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
@@ -45,6 +46,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-dash': {
         templateUrl: 'templates/tab-dash.html',
+        //templateUrl: '//www.google.com',
+        
         controller: 'DashCtrl'
       }
     }
@@ -62,7 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab.chat-detail', {
       url: '/feed/:chatId',
       views: {
-        'tab-chats': {
+        'tab-feed': {
           templateUrl: 'templates/chat-detail.html',
           controller: 'ChatDetailCtrl'
         }
@@ -78,8 +81,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-
-
   .state('tab.me', {
     url: '/me',
     views: {
@@ -92,5 +93,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
+  $ionicConfigProvider.tabs.position('bottom');
 
 });

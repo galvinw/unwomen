@@ -44,6 +44,12 @@ angular.module('starter.controllers', [])
 
 
 .controller('AccountCtrl', function($scope) {
+  $scope.disableVerticalScrolling = function() {
+    var scrollPos = $ionicScrollDelegate.getScrollPosition().top;
+    $ionicScrollDelegate.scrollTo(0, scrollPos, false);
+}
+
+
   $scope.settings = {
     enableFriends: true
   }

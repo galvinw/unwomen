@@ -1,0 +1,31 @@
+<ion-view view-title="expense" class="signup-background" hide-nav-bar="true">
+  <ion-content>
+    <ion-list>
+        <!--<ion-item>
+          <ion-range min="0" max="50000" step="200" ng-model="expense.amount" color="black">
+            <ion-label range-left>0</ion-label>
+            <ion-label range-right>50,000</ion-label>
+          </ion-range>
+        </ion-item>-->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div style="border-radius: 5px;width: 90%;height:20px;margin: auto;">
+          <div class="item range"  >
+            <i>$</i>
+            <input type="range" name="amount" ng-model="expense.amount" min="0" max="10000" value="1500" step="500">
+            <i style="font-size: 16pt">$</i>
+            <p style="text-align: center;font-size: 14pt">      {{expense.amount}} RP</p>
+
+          </div>   
+
+        </div> 
+
+        <br><br><br><br>
+          <a href="#/tab/dash">  
+            <div style="height: 90px; width: 98%;border: 30px">
+            </div>      
+          </a>
+
+
+    </ion-list >
+  </ion-content>
+</ion-view>

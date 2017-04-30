@@ -29,6 +29,17 @@
     background-repeat: no-repeat
 }
 
+.feedfriends-background {
+    background-image: url('../img/feed/FriendsFeed.png');
+    background-repeat: no-repeat
+}
+
+.feed-background {
+    background-image: url('../img/feed/MyActivity.png');
+    background-repeat: no-repeat
+}
+
+
 /*.leftReorderButton .item-right-edit {
   left: 0;
 }

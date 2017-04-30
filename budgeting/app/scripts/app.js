@@ -82,13 +82,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','i
     })
 
 
+  .state('tab.feedfriends', {
+      url: '/feed/1',
+      views: {
+        'tab-feed': {
+          templateUrl: 'templates/feedfriends.html'
+        }
+      }
+    })
+
 
   .state('tab.feed', {
       url: '/feed',
       views: {
         'tab-feed': {
-          templateUrl: 'templates/tab-feed.html',
-          controller: 'ChatsCtrl'
+          templateUrl: 'templates/tab-feed.html'
         }
       }
     })
